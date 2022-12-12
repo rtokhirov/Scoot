@@ -1,0 +1,83 @@
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0px;
+    .container {
+        padding-right: 4rem;
+        padding-left: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        div {
+            display: flex;
+            align-items: center;
+            gap: 6rem;
+        }
+        @include responsive(tablet) {
+            padding-right: 3.2rem;
+            padding-left: 3.2rem;
+        }
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        @include responsive(smaller-tablet) {
+            position: absolute;
+            background-color: $color-dark-navy;
+            top: 80px;
+            left: 0;
+            width: 70vw;
+            height: 87vh;
+            flex-direction: column;
+            justify-content: space-between;
+            .nav-list {
+                flex-direction: column;
+                gap: 24px;
+                padding-left: 32px;
+                padding-top: 64px;
+                padding-bottom: 32px;
+            }
+            a {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                color: #E5ECF4;
+            }
+            .header__btn {
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 3.2rem;
+        margin-right: auto;
+    }
+    &__nav-btn {
+        display: none;
+        width: 20px;
+        height: 16px;
+        margin-top: 5px;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    @include responsive(smaller-tablet) {
+        &__nav-btn {
+            display: block;
+        }
+        .container div {
+            gap: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

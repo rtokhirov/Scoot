@@ -1,0 +1,26 @@
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min--moz-device-pixel-ratio: 2),
+only screen and ( -o-min-device-pixel-ratio: 2/1),
+only screen and ( min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx) {
+    .careers_mt {
+        background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url(../images/png/maintop_carBg@2x.png);
+        @include responsive (b-tablet) {
+            background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url(../images/png/maintop_carCarmobile@2x.png);
+        }
+    }
+    .about_mt {
+        background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url(../images/png/maintop_directionsBg@2x.png);
+        @include responsive (b-tablet) {
+            background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url(../images/png/maintop_directionsBg_mobile@2x.png);
+        }
+    }
+    .hero {
+        background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)), url(../images/png/scoot-hero@2x.png);
+    }
+    .signup {
+        background-color: $color-dark-navy;
+        background-image: url(../images/png/signup-bg@2x.png);
+    }
+}

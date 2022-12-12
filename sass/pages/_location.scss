@@ -1,0 +1,79 @@
+.map {
+    &__div {
+        padding-top: 12rem;
+        width: 100%;
+        max-width: 1110px;
+        img {
+            width: 100%;
+            max-width: 1110px;
+            // border-radius: 50%;
+        }
+    }
+    .map2 {
+        display: none;
+    }
+    .map-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 3.8rem;
+        margin-top: 4rem;
+        a {
+            padding: 22px;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            color: $color-dark-navy;
+            text-align: center;
+            background-color: rgba(252, 183, 43, 0.15);
+        }
+    }
+    @include responsive (mini-tablet) {
+        .map1 {
+            display: none;
+        }
+        .map2 {
+            display: block;
+        }
+    }
+}
+
+.massage {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 12rem;
+        padding-top: 12rem;
+    }
+    h2 {
+        width: 100%;
+        max-width: 351px;
+    }
+    p {
+        width: 100%;
+        max-width: 430px;
+        margin-left: -20px;
+    }
+    @include responsive (mini-desktop) {
+        .container {
+            flex-direction: column;
+            gap: 4rem;
+            text-align: center;
+        }
+    }
+    @include responsive (mini-tablet) {
+        .container {
+            padding-bottom: 7.2rem;
+            padding-top: 7.2rem;
+            gap: 3.2rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 3.2rem;
+            max-width: 100%;
+        }
+        p {
+            max-width: 100%;
+        }
+    }
+}

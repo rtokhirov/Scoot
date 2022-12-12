@@ -1,0 +1,40 @@
+.footer {
+    background-color: #333A44;
+    .container {
+        padding-top: 36px;
+        padding-bottom: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer-div {
+            display: flex;
+            justify-content: space-between;
+            gap: 59px;
+            ul {
+                display: flex;
+                gap: 32px;
+            }
+        }
+        .socials {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            a:hover svg path {
+                fill: $color-light-grey;
+            }
+        }
+        @include responsive (smaller-tablet) {
+            flex-direction: column;
+            gap: 85px;
+            .footer-div {
+                flex-direction: column;
+                gap: 40px;
+                ul {
+                    flex-direction: column;
+                    gap: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

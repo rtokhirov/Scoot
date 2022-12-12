@@ -1,0 +1,6 @@
+.hidden {
+    @include responsive(smaller-tablet) {
+        display: none;
+    }
+    // display: none;
+}
